@@ -1,3 +1,4 @@
+## Downloading The model
 import torch
 import torchvision
 #############################   EFFICIENTNET   ###################################
@@ -8,9 +9,9 @@ def download_effnet_b0(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.2, inplace = True),
-      torch.nn.Linear(in_features=1280, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.2, inplace = True),
+  #     torch.nn.Linear(in_features=1280, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 def download_effnet_b1(disable_grad= True,
@@ -20,9 +21,9 @@ def download_effnet_b1(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.2, inplace = True),
-      torch.nn.Linear(in_features=1280, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.2, inplace = True),
+  #     torch.nn.Linear(in_features=1280, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 def download_effnet_b2(disable_grad= True,
@@ -32,9 +33,9 @@ def download_effnet_b2(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.3, inplace = True),
-      torch.nn.Linear(in_features=1408, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.3, inplace = True),
+  #     torch.nn.Linear(in_features=1408, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 def download_effnet_b3(disable_grad= True,
@@ -44,9 +45,9 @@ def download_effnet_b3(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.3, inplace = True),
-      torch.nn.Linear(in_features=1536, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.3, inplace = True),
+  #     torch.nn.Linear(in_features=1536, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 def download_effnet_b4(disable_grad= True,
@@ -56,9 +57,9 @@ def download_effnet_b4(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.4, inplace = True),
-      torch.nn.Linear(in_features=1792, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.4, inplace = True),
+  #     torch.nn.Linear(in_features=1792, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 
@@ -69,9 +70,9 @@ def download_effnet_b5(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.4, inplace = True),
-      torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.4, inplace = True),
+  #     torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 def download_effnet_b6(disable_grad= True,
@@ -81,9 +82,9 @@ def download_effnet_b6(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.5, inplace = True),
-      torch.nn.Linear(in_features=2304, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.5, inplace = True),
+  #     torch.nn.Linear(in_features=2304, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 def download_effnet_b7(disable_grad= True,
@@ -93,9 +94,9 @@ def download_effnet_b7(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.5, inplace = True),
-      torch.nn.Linear(in_features=2560, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.5, inplace = True),
+  #     torch.nn.Linear(in_features=2560, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 
@@ -107,9 +108,9 @@ def download_mobilenet_v2(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Dropout(p=0.2, inplace = False),
-      torch.nn.Linear(in_features=1280, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Dropout(p=0.2, inplace = False),
+  #     torch.nn.Linear(in_features=1280, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 
@@ -120,11 +121,11 @@ def download_mobilenet_v3_small(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Linear(in_features=576, out_features = 1024, bias = True),
-      torch.nn.Hardswish(),
-      torch.nn.Dropout(p=0.2, inplace = True),
-      torch.nn.Linear(in_features = 1024, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Linear(in_features=576, out_features = 1024, bias = True),
+  #     torch.nn.Hardswish(),
+  #     torch.nn.Dropout(p=0.2, inplace = True),
+  #     torch.nn.Linear(in_features = 1024, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 
@@ -135,11 +136,11 @@ def download_mobilenet_v3_large(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.classifier = torch.nn.Sequential(
-      torch.nn.Linear(in_features=960, out_features = 1280, bias = True),
-      torch.nn.Hardswish(),
-      torch.nn.Dropout(p=0.2, inplace = True),
-      torch.nn.Linear(in_features = 1280, out_features = num_classes, bias = True))
+  # my_model.classifier = torch.nn.Sequential(
+  #     torch.nn.Linear(in_features=960, out_features = 1280, bias = True),
+  #     torch.nn.Hardswish(),
+  #     torch.nn.Dropout(p=0.2, inplace = True),
+  #     torch.nn.Linear(in_features = 1280, out_features = num_classes, bias = True))
   return my_model, my_transform
 
 
@@ -151,7 +152,7 @@ def download_resnet18(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.fc = torch.nn.Linear(in_features=512, out_features = num_classes, bias = True)
+  # my_model.fc = torch.nn.Linear(in_features=512, out_features = num_classes, bias = True)
   return my_model, my_transform
 
 def download_resnet34(disable_grad= True,
@@ -161,7 +162,7 @@ def download_resnet34(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.fc = torch.nn.Linear(in_features=512, out_features = num_classes, bias = True)
+  # my_model.fc = torch.nn.Linear(in_features=512, out_features = num_classes, bias = True)
   return my_model, my_transform
 
 def download_resnet50(disable_grad= True,
@@ -171,7 +172,7 @@ def download_resnet50(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.fc = torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True)
+  # my_model.fc = torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True)
   return my_model, my_transform
 
 def download_resnet101(disable_grad= True,
@@ -181,7 +182,7 @@ def download_resnet101(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.fc = torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True)
+  # my_model.fc = torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True)
   return my_model, my_transform
 
 
@@ -192,5 +193,5 @@ def download_resnet152(disable_grad= True,
   if disable_grad:
     for param in my_model.parameters():
       param.requires_grad = False
-  my_model.fc = torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True)
+  # my_model.fc = torch.nn.Linear(in_features=2048, out_features = num_classes, bias = True)
   return my_model, my_transform
